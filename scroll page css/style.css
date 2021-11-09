@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-snap-align: start;
+}
+.container{
+    scroll-snap-type: x mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.one{
+    background: rgb(145, 221, 68);
+}
+.two{
+    background: rgb(221, 129, 68);
+}
+.three{
+    background: rgb(14, 209, 193);
+}
+.for{
+    background: rgb(133, 54, 207);
+}
