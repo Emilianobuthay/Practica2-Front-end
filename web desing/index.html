@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> web desing</title>
+</head>
+<body>
+   <div class="container">
+       <div class="navbar">
+           <div class="logo">
+               <img src="logo.png" alt="">
+           </div>
+           <nav>
+               <ul>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">librery</a></li>
+                   <li><a href="#">blog</a></li>
+                   <li><a href="#">contact</a></li>
+               </ul>
+           </nav>
+           <div class="user">
+               <p>Emiliano buthay</p>
+               <img src="user.png" alt="">
+           </div>
+       </div>
+       <div class="sidebar">
+           <img src="search.png"  class="search-icon" alt="">
+           <div class="social-links">
+               <img src="fb.png" alt="">
+               <img src="pt.png" alt="">
+               <img src="tw.png" alt="">
+           </div>
+           <img src="info.png"  class="info-icon" alt="">
+       </div>
+       <div class="msg-container">
+           <div id="slider">
+               <div class="msg-col">
+                   <h1>The reasoning</h1>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quasi ad voluptatem, accusantium facilis consequatur eius nemo omnis tenetur quisquam cumque illo expedita ipsum ullam quo architecto dolores vitae! Quis!</p>
+                   <a href="#">learn more</a>
+               </div>
+               <div class="msg-col">
+                <h1>The klowle</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quasi ad voluptatem, accusantium facilis consequatur eius nemo omnis tenetur quisquam cumque illo expedita ipsum ullam quo architecto dolores vitae! Quis!</p>
+                <a href="#">learn more</a>
+            </div>
+            <div class="msg-col">
+                <h1>For session</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quasi ad voluptatem, accusantium facilis consequatur eius nemo omnis tenetur quisquam cumque illo expedita ipsum ullam quo architecto dolores vitae! Quis!</p>
+                <a href="#">learn more</a>
+            </div>
+            <div class="msg-col">
+                <h1>Awesome nav</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quasi ad voluptatem, accusantium facilis consequatur eius nemo omnis tenetur quisquam cumque illo expedita ipsum ullam quo architecto dolores vitae! Quis!</p>
+                <a href="#">learn more</a>
+            </div>
+           </div>
+       </div>
+       <div class="controler">
+           <div id="line1"></div>
+           <div id="line2"></div>
+           <div id="line3"></div>
+           <div id="line4"></div>
+           <div id="active"></div>
+       </div>
+   </div>   
+   
+   
+   <script>
+      
+      var slider = document.getElementById('slider');
+      var active = document.getElementById('active');
+      var line1 = document.getElementById('line1');
+      var line2 = document.getElementById('line2');
+      var line3 = document.getElementById('line3');
+      var line4 = document.getElementById('line4');
+
+      line1.onclick = function(){
+          slider.style.transform = 'translateX(0)';
+          active.style.top = '0px';
+      }
+      line2.onclick = function(){
+          slider.style.transform = 'translateX(-25%)';
+          active.style.top = '80px';
+      }
+      line3.onclick = function(){
+          slider.style.transform = 'translateX(-50%)';
+          active.style.top = '160px';
+      }
+      line4.onclick = function(){
+          slider.style.transform = 'translateX(-75%)';
+          active.style.top = '240px';
+      }
+
+
+
+   </script>
+
+</body>
+</html>
